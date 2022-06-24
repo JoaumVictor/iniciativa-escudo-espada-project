@@ -5,6 +5,24 @@
   flex-flow: $y $z;
 }
 
+@keyframes showOptionsOn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes showOptionsOff{
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -27,13 +45,16 @@
     }
   }
 
+  .displayOn {
+    animation: showOptionsOn 0.6s forwards alternate;
+  }
+
   .displayOff {
-    display: none;
+    animation: showOptionsOff 0.6s forwards alternate;
   }
 
   .moreOptions {
     @include disp(space-evenly, column, nowrap);
-    // display: none;
     background-color: #2E3440;
     color: white;
     text-align: center;

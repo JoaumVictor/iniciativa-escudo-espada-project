@@ -22,7 +22,7 @@ export default function Header() {
         <CgDetailsMore />
       </button>
 
-      <div className={showOptions ? S.moreOptions : S.displayOff}>
+      <div className={`${S.moreOptions} ${showOptions ? S.displayOn : S.displayOff}`}>
         <a onClick={() => setShowOptions(!showOptions)} className={S.closeOptions}>
             <IoMdClose />
         </a>
