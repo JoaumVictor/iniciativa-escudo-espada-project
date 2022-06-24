@@ -1,0 +1,69 @@
+@mixin disp($x, $y, $z) {
+  display: flex;
+  align-items: center;
+  justify-content: $x;
+  flex-flow: $y $z;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: 8vh;
+  background-color: #4C566A;
+
+  .showOptions {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 32px;
+    color: white;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .displayOff {
+    display: none;
+  }
+
+  .moreOptions {
+    @include disp(space-evenly, column, nowrap);
+    // display: none;
+    background-color: #2E3440;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    position: fixed;
+    float: inline-end;
+    top: 0vh;
+    width: 35%;
+    right: 0;
+
+    .closeOptions {
+      color: white;
+      font-size: 40px;
+    }
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  img {
+    cursor: pointer;
+    height: 80%;
+  }
+
+  a {
+    @include disp(space-evenly, row, nowrap);
+    font-size: 16px;
+    span {
+      font-size: 26px;
+    }
+  }
+}
