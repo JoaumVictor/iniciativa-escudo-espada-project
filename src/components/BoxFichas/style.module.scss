@@ -1,0 +1,17 @@
+.page {
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column nowrap;
+  width: 60%;
+  height: 25vh;
+  margin: 20% 0;
+  text-align: center;
+
+  img {
+    max-height: 30vh;
+    border-radius: 8px;
+  }
+}

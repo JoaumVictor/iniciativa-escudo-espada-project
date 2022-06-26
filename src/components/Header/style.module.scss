@@ -26,6 +26,7 @@
 .header {
   display: flex;
   align-items: center;
+  position: fixed;
   justify-content: space-evenly;
   flex-flow: row nowrap;
   width: 100vw;
@@ -54,20 +55,34 @@
   }
 
   .moreOptions {
-    @include disp(space-evenly, column, nowrap);
+    @include disp(space-between, column, nowrap);
     background-color: #2E3440;
     color: white;
     text-align: center;
     height: 100vh;
+    padding: 5% 0% 15% 0%;
     position: fixed;
     float: inline-end;
     top: 0vh;
     width: 35%;
     right: 0;
 
+    a {
+      &:hover {
+        color: rgb(11, 188, 49);
+      }
+    }
+
     .closeOptions {
+      cursor: pointer;
+      margin-left: 55%;
       color: white;
       font-size: 40px;
+      width: 80%;
+
+      &:hover {
+        color: red;
+      }
     }
   }
 

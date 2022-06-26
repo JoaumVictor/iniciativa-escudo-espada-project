@@ -6,6 +6,8 @@ import { CgDetailsMore } from 'react-icons/cg';
 import { IoMdClose } from 'react-icons/io';
 import { MdCreate } from 'react-icons/md';
 import { RiFilePaper2Fill } from 'react-icons/ri';
+import { HiOutlineMail } from 'react-icons/hi';
+
 
 export default function Header() {
   const [showOptions, setShowOptions] = React.useState(false);
@@ -24,7 +26,7 @@ export default function Header() {
 
       <div className={`${S.moreOptions} ${showOptions ? S.displayOn : S.displayOff}`}>
         <a onClick={() => setShowOptions(!showOptions)} className={S.closeOptions}>
-            <IoMdClose />
+          <IoMdClose />
         </a>
         <a href="">
           <span>
@@ -32,7 +34,7 @@ export default function Header() {
           </span>
           Meu perfil
         </a>
-        <a href="">
+        <a href="/CreateNewRecord">
           <span>
             <MdCreate />
           </span>
@@ -43,7 +45,13 @@ export default function Header() {
             <RiFilePaper2Fill />
           </span>
           Visualizar Fichas
-          </a>
+        </a>
+        <a href="">
+          <span>
+            <HiOutlineMail />
+          </span>
+          Contato
+        </a>
       </div>
     </header>
   )

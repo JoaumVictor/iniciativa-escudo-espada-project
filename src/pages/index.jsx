@@ -1,11 +1,15 @@
-import styles from '../styles/Home.module.css'
 import Header from '../components/Header/index';
+import BoxFichas from '../components/BoxFichas';
+import S from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Header />
-      <h1>opa salve</h1>
-    </div>
+      <div className={S.page}>
+        <BoxFichas />
+        <BoxFichas />
+      </div>
+    </>
   )
 }
