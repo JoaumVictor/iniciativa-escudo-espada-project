@@ -1,0 +1,46 @@
+const data = {
+  informacoes: [
+    { name: "NomeDoPersonagem", text: "Nome Do Personagem:" },
+    { name: "ClasseENivel", text: "Classe e Nível:" },
+    { name: "Antecedente", text: "Antecedente:" },
+    { name: "NomeDoJogador", text: "Nome Do Jogador:" },
+    { name: "Raca", text: "Raça:" },
+    { name: "Tendencia", text: "Tendência:" },
+    { name: "Experiencia", text: "Experiência:" },
+  ],
+  atributos: [
+    "Força",
+    "Destreza",
+    "Constituição",
+    "Inteligência",
+    "Sabedoria",
+    "Carisma",
+  ],
+  passivas: [
+    "Inspiração",
+    "Bônus de Proficiência",
+    "Sabedoria Passiva(Percepção)",
+  ],
+  pericias: [
+    "Acrobacia(Des)",
+    "Arcanismo(Int)",
+    "Atletismo(For)",
+    "Atuação(Car)",
+    "Blefar(Car)",
+    "Furtividade(Des)",
+    "História(Int)",
+    "Intimidação(Car)",
+    "intuição(Sab)",
+    "Investigação(Int)",
+    "Lidar com Animais(Sab)",
+    "Medicina(Sab)",
+    "Natureza(Int)",
+    "Percepção(Sab)",
+    "Persuasão(Car)",
+    "Prestidigitação(Des)",
+    "Religião(Int)",
+    "Sobrevivência(Sab)",
+  ],
+};
+
+export default data;
